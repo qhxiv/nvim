@@ -1,7 +1,6 @@
 local opt = vim.opt
 
 opt.clipboard = "unnamedplus"
-opt.cursorline = true
 
 opt.number = true
 opt.relativenumber = true
@@ -41,5 +40,3 @@ opt.updatetime = 50
 
 opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
-opt.guicursor = ""
-opt.cursorline = false
