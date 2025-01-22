@@ -122,7 +122,6 @@ return {
       ts_ls = {},
       angularls = {},
       tailwindcss = {},
-      clangd = {},
     }
 
     local ensure_installed = vim.tbl_keys(servers or {})
