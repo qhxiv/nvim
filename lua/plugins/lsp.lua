@@ -117,7 +117,7 @@ return {
           },
         },
       },
-      emmet_language_server = {},
+      emmet_ls = {},
       cssls = {},
       ts_ls = {},
       angularls = {},
