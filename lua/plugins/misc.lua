@@ -15,4 +15,5 @@ return {
     event = "VeryLazy",
     opts = {},
   },
+  { "lambdalisue/vim-suda" },
 }
