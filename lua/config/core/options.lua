@@ -20,7 +20,6 @@ opt.mouse = "a"
 opt.wrap = false
 opt.linebreak = true
 
--- opt.showtabline = 2
 opt.signcolumn = "yes"
 
 opt.swapfile = false

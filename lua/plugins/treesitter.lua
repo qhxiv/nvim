@@ -8,6 +8,8 @@ return {
         "lua",
         "luadoc",
         "vimdoc",
+        "markdown",
+        "markdown_inline",
       },
       auto_install = true,
       highlight = {
