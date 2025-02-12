@@ -39,3 +39,5 @@ opt.updatetime = 50
 
 opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+
+opt.laststatus = 3

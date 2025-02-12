@@ -18,7 +18,6 @@ return {
         "branch",
         "diff",
         "disagnostics",
-        "%=",
         { "filename", path = 1 },
       },
       lualine_x = {
