@@ -3,10 +3,7 @@ return {
     "epwalsh/obsidian.nvim",
     version = "*",
     lazy = true,
-    event = {
-      "BufReadPre /mnt/d/Documents/Workspace/obsidian/*.md",
-      "BufNewFile /mnt/d/Documents/Workspace/obsidian/*.md",
-    },
+    ft = "markdown",
     dependencies = {
       -- Required.
       "nvim-lua/plenary.nvim",
