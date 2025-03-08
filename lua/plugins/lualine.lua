@@ -3,7 +3,6 @@ return {
   dependencies = { "nvim-tree/nvim-web-devicons" },
   opts = {
     options = {
-      theme = "lackluster",
       icons_enabled = false,
       component_separators = "",
       section_separators = "",
