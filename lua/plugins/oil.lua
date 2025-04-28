@@ -9,7 +9,7 @@ return {
         ["<C-l>"] = false,
       },
       viewoptions = {
-        show_hidden = true,
+        show_hidden = false,
       },
       float = { padding = 5 },
     })

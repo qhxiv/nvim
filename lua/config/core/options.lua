@@ -41,3 +41,5 @@ opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
 opt.laststatus = 3
+
+vim.cmd("colo habamax")

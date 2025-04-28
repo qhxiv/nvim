@@ -49,16 +49,12 @@ set("n", "<Esc>", "<Cmd>nohlsearch<CR>")
 
 set("n", "J", "mzJ`z")
 
--- Diagnostic keymaps
--- v0.11+
--- set("n", "[d", function()
---   vim.diagnostic.jump({ count = -1, float = true })
--- end)
--- set("n", "]d", function()
---   vim.diagnostic.jump({ count = 1, float = true })
--- end)
-set("n", "[d", vim.diagnostic.goto_prev)
-set("n", "]d", vim.diagnostic.goto_next)
+set("n", "[d", function()
+  vim.diagnostic.jump({ count = -1, float = true })
+end)
+set("n", "]d", function()
+  vim.diagnostic.jump({ count = 1, float = true })
+end)
 set("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open floating diagnostic message" })
 set("n", "<leader>l", vim.diagnostic.setloclist, { desc = "Open diagnostics list" })
 
