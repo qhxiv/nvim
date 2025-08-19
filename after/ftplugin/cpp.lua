@@ -7,11 +7,6 @@ set("n", "<leader>c", function()
   local output = vim.fn.expand("%:r")
   local command = string.format("g++ -std=c++17 %s -o %s && ./%s", filename, output, output)
 
-  -- vim.cmd("write")
-  -- vim.cmd("vnew")
-  -- vim.cmd(string.format("terminal g++ -std=c++17 %s -o %s && ./%s", filename, output, output))
-  -- vim.cmd("startinsert")
-
   vim.cmd.write()
   vim.cmd.vnew()
   vim.cmd.term(command)
