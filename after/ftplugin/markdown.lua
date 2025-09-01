@@ -7,4 +7,4 @@ opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.expandtab = true
 
-opt.conceallevel = 2
+-- opt.conceallevel = 2

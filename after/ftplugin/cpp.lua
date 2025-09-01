@@ -5,7 +5,7 @@ local opts = { noremap = true, silent = true }
 set("n", "<leader>c", function()
   local filename = vim.fn.expand("%")
   local output = vim.fn.expand("%:r")
-  local command = string.format("g++ -std=c++17 %s -o %s && ./%s", filename, output, output)
+  local command = string.format("g++ -std=c++17 '%s' -o $HOME/.local/bin/a && $HOME/.local/bin/a", filename)
 
   vim.cmd.write()
   vim.cmd.vnew()
@@ -17,5 +17,5 @@ set("n", "<leader>r", function()
   local templatePath = "/mnt/d/Documents/Workspace/cp/temp.cpp"
 
   vim.api.nvim_buf_set_lines(0, 0, -1, false, vim.fn.readfile(templatePath))
-  vim.api.nvim_win_set_cursor(0, { 13, 0 })
+  vim.api.nvim_win_set_cursor(0, { 7, 0 })
 end, opts)
