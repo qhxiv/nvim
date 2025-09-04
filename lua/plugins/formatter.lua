@@ -15,7 +15,7 @@ return {
         json = { "prettierd", "prettier", stop_after_first = true },
         yaml = { "prettierd", "prettier", stop_after_first = true },
         markdown = { "prettierd", "prettier", stop_after_first = true },
-        xml = { "xmlformatter" },
+        xml = { "xmllint" },
       },
       format_on_save = function(bufnr)
         -- Disable with a global or buffer-local variable
