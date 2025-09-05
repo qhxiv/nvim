@@ -1,8 +1,9 @@
-vim.g.mapleader = " "
-vim.g.maplocalleader = " "
-
 local set = vim.keymap.set
 local opts = { noremap = true, silent = true }
+
+-- Set leader key to space
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Swap j, k with gj, gk
 set("n", "j", "gj", opts)
@@ -10,10 +11,10 @@ set("n", "gj", "j", opts)
 set("n", "k", "gk", opts)
 set("n", "gk", "k", opts)
 
--- save file
+-- Save file
 set("n", "<C-s>", "<Cmd>w<CR>", opts)
 
--- save file without auto-formatting
+-- Save file without auto-formatting
 set("n", "<leader>sn", "<Cmd>noautocmd w <CR>", opts)
 
 -- Buffers
