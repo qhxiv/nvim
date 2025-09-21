@@ -5,7 +5,10 @@ local opts = { noremap = true, silent = true }
 set("n", "<leader>c", function()
   local filename = vim.fn.expand("%")
   local output = vim.fn.expand("%:r")
-  local command = string.format("g++ -std=c++17 '%s' -o $HOME/.local/bin/a && $HOME/.local/bin/a", filename)
+  local command = string.format(
+    "g++ -std=c++17 -Wshadow -Wall -O2 -Wno-unused-result '%s' -o $HOME/.local/bin/a && $HOME/.local/bin/a",
+    filename
+  )
 
   vim.cmd.write()
   vim.cmd.vnew()
