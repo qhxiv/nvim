@@ -14,7 +14,7 @@ return {
       lualine_z = {},
 
       lualine_c = {
-        "branch",
+        { "branch", icons_enabled = true },
         "diff",
         "disagnostics",
         { "filename", path = 1 },
