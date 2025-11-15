@@ -1,8 +1,7 @@
 return {
-  "Mofiqul/vscode.nvim",
-  lazy = false,
-  priority = 1000,
+  "sainnhe/gruvbox-material",
   config = function()
-    vim.cmd("colo vscode")
+    vim.g.gruvbox_material_background = "hard"
+    vim.cmd("colo gruvbox-material")
   end,
 }
