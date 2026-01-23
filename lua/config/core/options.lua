@@ -5,6 +5,8 @@ opt.clipboard = "unnamedplus"
 opt.number = true
 opt.relativenumber = true
 
+opt.guicursor = ""
+
 opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
