@@ -11,7 +11,7 @@ return {
       viewoptions = {
         show_hidden = false,
       },
-      float = { padding = 5, border = 2 },
+      float = { padding = 5, border = "bold" },
     })
 
     -- vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })

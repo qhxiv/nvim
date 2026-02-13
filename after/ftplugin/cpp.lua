@@ -17,7 +17,8 @@ end, opts)
 
 -- Copy from template to current file
 set("n", "<leader>r", function()
-  local templatePath = "/mnt/d/Documents/Workspace/cp/temp.cpp"
+  -- local templatePath = "/mnt/d/Documents/Workspace/cp/temp.cpp"
+  local templatePath = "~/cp/tmp.cpp"
 
   vim.api.nvim_buf_set_lines(0, 0, -1, false, vim.fn.readfile(templatePath))
   vim.api.nvim_win_set_cursor(0, { 7, 0 })
