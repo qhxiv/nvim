@@ -47,6 +47,7 @@ return {
     vim.keymap.set("n", "<leader>fw", builtin.grep_string)
     vim.keymap.set("n", "<leader>fg", builtin.live_grep)
     vim.keymap.set("n", "<leader>fd", builtin.diagnostics)
+    vim.keymap.set("n", "<leader>fp", builtin.planets)
     vim.keymap.set("n", "<leader>fr", builtin.resume)
     vim.keymap.set("n", "<leader>f.", builtin.oldfiles)
     vim.keymap.set("n", "<leader>fb", builtin.buffers)

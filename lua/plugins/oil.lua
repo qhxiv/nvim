@@ -11,10 +11,15 @@ return {
       viewoptions = {
         show_hidden = false,
       },
-      float = { padding = 5, border = "bold" },
+      float = {
+        padding = 5,
+        border = "bold",
+      },
+      confirmation = {
+        border = "bold",
+      },
     })
 
-    -- vim.keymap.set("n", "-", "<CMD>Oil --float<CR>", { desc = "Open parent directory" })
     vim.keymap.set("n", "-", "<CMD>lua require('oil').open_float('.')<CR>", { desc = "Open parent directory" })
   end,
 }
