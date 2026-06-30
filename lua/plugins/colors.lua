@@ -1,26 +1,19 @@
 return {
-  {
-    "Mofiqul/vscode.nvim",
-    config = function()
-      -- vim.cmd("colo vscode")
-    end,
-  },
-  {
-    "rebelot/kanagawa.nvim",
-    config = function()
-      require("kanagawa").setup({
-        colors = {
-          theme = {
-            all = {
-              ui = {
-                bg_gutter = "none",
-              },
-            },
-          },
-        },
-      })
+  "slugbyte/lackluster.nvim",
+  lazy = false,
+  priority = 1000,
+  init = function()
+    local lackluster = require("lackluster")
 
-      vim.cmd("colo kanagawa")
-    end,
-  },
+    lackluster.setup({
+      tweak_background = {
+        normal = "none",
+        telescope = "none",
+        menu = "none",
+        popup = "none",
+      },
+    })
+
+    vim.cmd.colorscheme("lackluster-hack")
+  end,
 }
